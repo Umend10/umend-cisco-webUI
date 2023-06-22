@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  umend-ui-app:
+    image: umend-web:app$BUILD_NUMBER
+    build: .
+    container_name: umend1
+    ports:
+    - 1234:80
